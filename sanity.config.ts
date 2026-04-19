@@ -7,7 +7,7 @@ export default defineConfig({
   name: 'default',
   title: 'NESTRO CMS',
 
-  projectId: 'sh3idnp7',
+  projectId: 'tsqh1ba0',
   dataset: 'production',
 
   plugins: [structureTool(), visionTool()],
