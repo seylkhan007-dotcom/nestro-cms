@@ -4,6 +4,7 @@ import {localizedStringType} from './localizedStringType'
 import {localizedTextType} from './localizedTextType'
 
 import {apartmentType} from './apartmentType'
+import {complexType} from './complexType'
 import {advantageType} from './advantageType'
 import {reviewType} from './reviewType'
 import {contactType} from './contactType'
@@ -13,6 +14,7 @@ import {seoSettingsType} from './seoSettingsType'
 export const schemaTypes: SchemaTypeDefinition[] = [
   localizedStringType,
   localizedTextType,
+  complexType,
   apartmentType,
   advantageType,
   reviewType,
