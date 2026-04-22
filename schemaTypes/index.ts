@@ -8,6 +8,8 @@ import {complexType} from './complexType'
 import {advantageType} from './advantageType'
 import {reviewType} from './reviewType'
 import {contactType} from './contactType'
+import {guestLeadType} from './guestLeadType'
+import {ownerLeadType} from './ownerLeadType'
 import {homepageSettingsType} from './homepageSettingsType'
 import {seoSettingsType} from './seoSettingsType'
 
@@ -19,6 +21,8 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   advantageType,
   reviewType,
   contactType,
+  guestLeadType,
+  ownerLeadType,
   homepageSettingsType,
   seoSettingsType,
 ]
