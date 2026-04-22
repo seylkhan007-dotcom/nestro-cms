@@ -2,7 +2,7 @@ import {defineField, defineType} from 'sanity'
 
 export const footerSettingsType = defineType({
   name: 'footerSettings',
-  title: 'Footer',
+  title: 'Подвал сайта',
   type: 'document',
   fields: [
     defineField({
@@ -14,7 +14,7 @@ export const footerSettingsType = defineType({
     defineField({
       name: 'copyrightText',
       title: 'Copyright',
-      description: 'Например: © NESTRO Apartments. All rights reserved.',
+      description: 'Например: © NESTRO Apartments. Все права защищены.',
       type: 'localizedString',
     }),
     defineField({
@@ -95,7 +95,7 @@ export const footerSettingsType = defineType({
         typeof selection.copyrightEn === 'string' ? selection.copyrightEn : undefined
 
       return {
-        title: 'Footer',
+        title: 'Подвал сайта',
         subtitle: copyrightRu || copyrightEn || '',
       }
     },

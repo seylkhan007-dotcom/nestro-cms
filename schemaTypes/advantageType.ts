@@ -2,18 +2,20 @@ import {defineField, defineType} from 'sanity'
 
 export const advantageType = defineType({
   name: 'advantage',
-  title: 'Advantages',
+  title: 'Преимущества',
   type: 'document',
   fields: [
     defineField({
       name: 'title',
-      title: 'Заголовок / Title',
+      title: 'Заголовок',
+      description: 'Короткое название преимущества. Например: Быстрая связь.',
       type: 'localizedString',
       validation: (Rule) => Rule.required(),
     }),
     defineField({
       name: 'description',
-      title: 'Описание / Description',
+      title: 'Описание',
+      description: 'Короткое описание преимущества для сайта.',
       type: 'localizedText',
       validation: (Rule) => Rule.required(),
     }),
@@ -27,6 +29,7 @@ export const advantageType = defineType({
     defineField({
       name: 'orderRank',
       title: 'Порядок сортировки',
+      description: 'Чем меньше число, тем выше преимущество в списке.',
       type: 'number',
       initialValue: 1,
       validation: (Rule) => Rule.required().integer().min(1),
@@ -40,8 +43,8 @@ export const advantageType = defineType({
     },
     prepare({titleRu, titleEn, subtitle}) {
       return {
-        title: titleRu || titleEn || 'Advantage',
-        subtitle: subtitle ? `icon: ${subtitle}` : 'advantage',
+        title: titleRu || titleEn || 'Преимущество',
+        subtitle: subtitle ? `Иконка: ${subtitle}` : 'Преимущество',
       }
     },
   },
