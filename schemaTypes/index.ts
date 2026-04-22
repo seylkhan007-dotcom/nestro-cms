@@ -12,6 +12,9 @@ import {guestLeadType} from './guestLeadType'
 import {ownerLeadType} from './ownerLeadType'
 import {homepageSettingsType} from './homepageSettingsType'
 import {seoSettingsType} from './seoSettingsType'
+import {siteSettingsType} from './siteSettingsType'
+import {navigationType} from './navigationType'
+import {footerSettingsType} from './footerSettingsType'
 
 export const schemaTypes: SchemaTypeDefinition[] = [
   localizedStringType,
@@ -25,4 +28,7 @@ export const schemaTypes: SchemaTypeDefinition[] = [
   ownerLeadType,
   homepageSettingsType,
   seoSettingsType,
+  siteSettingsType,
+  navigationType,
+  footerSettingsType,
 ]
